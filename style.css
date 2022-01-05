@@ -1,5 +1,39 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.formAge {
+    margin-left: 25% !important;
+}
 
 
+.form-group.mb-3.inputBox span {
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}  
+span#simble {
+    padding: 6px 14px;
+    position: absolute;
+    left: 6px;
+}
+#gesture{
+    color:red;
+    animation:hints .2s infinite;
+}
 
+@keyframes hints {
+    0%{
+        opacity: 0;
+    }50%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+    }
+}
 

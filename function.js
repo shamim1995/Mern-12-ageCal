@@ -27,13 +27,15 @@ function ageCheck(age) {
     if(age > 0 && age <= 10 ){
         return {
             name : 'Babu',
-            status : 'primary'
+            status : 'primary',
         }
     }else if(age > 10 && age <= 17){
 
         return{
             name : 'Young',
-            status : 'secondary'
+            status : 'secondary',
+        
+            
         }
     }else if (age > 17 && age <= 32){
         return {
@@ -56,4 +58,15 @@ function ageCheck(age) {
             status : 'dark'
         }
     }
+}
+
+
+/**
+ * function for validation
+ */
+
+function validation(merMsg, type="danger") {
+    
+    return `<p class="alert alert-${type}"> ${merMsg} </p>`
+
 }
